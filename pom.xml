@@ -11,14 +11,14 @@
 	<packaging>jar</packaging>
 	<groupId>org.webjars</groupId>
 	<artifactId>systemjs-plugin-css</artifactId>
-	<version>0.1.35</version>
+	<version>0.1.35-SNAPSHOT</version>
 	<name>SystemJS CSS plugin</name>
 	<description>WebJar for SystemJS CSS plugin</description>
 	<url>http://webjars.org</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<upstream.url>https://github.com/systemjs/plugin-css/archive/${project.version}.zip</upstream.url>
+		<upstream.url>https://github.com/systemjs/plugin-css/archive/${version.unsnapshot}.zip</upstream.url>
 		<destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
 		<requirejs>
 			{
