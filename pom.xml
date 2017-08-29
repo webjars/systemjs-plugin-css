@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
@@ -11,7 +10,7 @@
 	<packaging>jar</packaging>
 	<groupId>org.webjars</groupId>
 	<artifactId>systemjs-plugin-css</artifactId>
-	<version>0.1.35-SNAPSHOT</version>
+	<version>0.1.35</version>
 	<name>SystemJS CSS plugin</name>
 	<description>WebJar for SystemJS CSS plugin</description>
 	<url>http://webjars.org</url>
@@ -52,7 +51,7 @@
 		<url>http://github.com/webjars/systemjs-plugin-css</url>
 		<connection>scm:git:https://github.com/webjars/systemjs-plugin-css.git</connection>
 		<developerConnection>scm:git:https://github.com/webjars/systemjs-plugin-css.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>systemjs-plugin-css-0.1.35</tag>
 	</scm>
 
 	<build>
@@ -84,15 +83,12 @@
 						<configuration>
 							<target>
 								<echo message="download archive" />
-								<get src="${upstream.url}"
-									dest="${project.build.directory}/${project.artifactId}.zip" />
+								<get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
 								<echo message="unzip archive" />
-								<unzip src="${project.build.directory}/${project.artifactId}.zip"
-									dest="${project.build.directory}" />
+								<unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
 								<echo message="moving resources" />
 								<move todir="${destDir}">
-									<fileset
-										dir="${project.build.directory}/plugin-css-${version.unsnapshot}" />
+									<fileset dir="${project.build.directory}/plugin-css-${version.unsnapshot}" />
 								</move>
 							</target>
 						</configuration>
