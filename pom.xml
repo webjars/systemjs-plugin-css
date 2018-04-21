@@ -10,7 +10,7 @@
 	<packaging>jar</packaging>
 	<groupId>org.webjars</groupId>
 	<artifactId>systemjs-plugin-css</artifactId>
-	<version>0.1.37</version>
+	<version>0.1.38-SNAPSHOT</version>
 	<name>SystemJS CSS plugin</name>
 	<description>WebJar for SystemJS CSS plugin</description>
 	<url>http://webjars.org</url>
@@ -51,7 +51,7 @@
 		<url>http://github.com/webjars/systemjs-plugin-css</url>
 		<connection>scm:git:https://github.com/webjars/systemjs-plugin-css.git</connection>
 		<developerConnection>scm:git:https://github.com/webjars/systemjs-plugin-css.git</developerConnection>
-		<tag>systemjs-plugin-css-0.1.37</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<build>
